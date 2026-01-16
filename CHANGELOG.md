@@ -54,9 +54,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Future Planned Updates
 
-- [ ] Video gallery section
-- [ ] Latest uploads integration
-- [ ] Team building resources page
-- [ ] Community/Discord integration
-- [ ] Blog section for written guides
-- [ ] Tournament results archive
+- [ ] Pokemon Fakemon Database
