@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toy Time King - The Kingdom</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>Toy Time King</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li>
+            <a
+              href="https://www.youtube.com/c/ToyTimeKing"
+              target="_blank"
+              class="youtube-link"
+              >YouTube Channel</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-content">
+          <h2>Welcome to The Kingdom!</h2>
+          <p class="tagline">Competitive Pokemon Content Since 2017</p>
+          <p class="description">
+            Join me on my journey through the competitive Pokemon scene. From
+            strategic battles to team building guides, I share my passion for
+            competitive Pokemon gameplay.
+          </p>
+          <div class="latest-video">
+            <h3>Latest Video</h3>
+            <div class="video-container">
+              <!-- TO UPDATE: Replace 'ax0IJRbhR6M' with your new video ID -->
+              <!-- Video ID is the part after 'watch?v=' in the YouTube URL -->
+              <!-- Example: https://www.youtube.com/watch?v=YOUR_VIDEO_ID -->
+              <iframe
+                src="https://www.youtube.com/embed/2ZHpcyxlMko"
+                title="Latest Video"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="featured-videos">
+        <div class="container">
+          <h2>Featured Videos</h2>
+          <div class="video-carousel-wrapper">
+            <div class="video-carousel" id="videoCarousel">
+              <a
+                href="https://www.youtube.com/watch?v=ax0IJRbhR6M"
+                target="_blank"
+                class="video-card"
+              >
+                <img
+                  src="thumbnail1.jpg"
+                  alt="Featured Video 1"
+                  class="video-thumbnail-img"
+                />
+                <div class="video-info">
+                  <h3>Featured Video #1</h3>
+                  <p>
+                    Our most popular video to date! This was our first time
+                    delving into the world of fan-made Pokemon and a lot of
+                    these Pokemon would destroy standard competitive!
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=443Dnf4J1o0"
+                target="_blank"
+                class="video-card"
+              >
+                <img
+                  src="thumbnail2.jpg"
+                  alt="Featured Video 2"
+                  class="video-thumbnail-img"
+                />
+                <div class="video-info">
+                  <h3>Featured Video #2</h3>
+                  <p>
+                    Our second foray into looking into more broken fanmade
+                    Pokemon! We always have had a fun time talking about some of
+                    the strongest threats from games like Pokemon Insurgence and
+                    Pokemon Uranium!
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=FOmxHJIR5Oc"
+                target="_blank"
+                class="video-card"
+              >
+                <img
+                  src="thumbnail3.jpg"
+                  alt="Featured Video 3"
+                  class="video-thumbnail-img"
+                />
+                <div class="video-info">
+                  <h3>Featured Video #3</h3>
+                  <p>
+                    Experience intense competitive Pokemon battles with detailed
+                    analysis and commentary.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="scroll-buttons">
+            <button class="scroll-btn" onclick="scrollCarousel('left')">
+              ← Previous
+            </button>
+            <button class="scroll-btn" onclick="scrollCarousel('right')">
+              Next →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2>About the Channel</h2>
+          <div class="about-content">
+            <p>
+              I've been creating competitive Pokemon content since 2017, sharing
+              strategies, battles, and insights into the competitive scene. What
+              started as a hobby has grown into a passionate community of
+              Pokemon trainers.
+            </p>
+            <div class="features">
+              <div class="feature-card">
+                <h3>🎮 Competitive Battles</h3>
+                <p>Watch high-level Pokemon battles with detailed commentary</p>
+              </div>
+              <div class="feature-card">
+                <h3>📚 Strategy Guides</h3>
+                <p>Learn team building and competitive strategies</p>
+              </div>
+              <div class="feature-card">
+                <h3>🏆 Tournament Coverage</h3>
+                <p>Follow the competitive Pokemon scene</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Toy Time King. All rights reserved.</p>
+        <p>Competitive Pokemon Content Creator</p>
+      </div>
+    </footer>
+
+    <script>
+      function scrollCarousel(direction) {
+        const carousel = document.getElementById("videoCarousel");
+        const scrollAmount = 370; // card width + gap
+
+        if (direction === "left") {
+          carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        } else {
+          carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        }
+      }
+    </script>
+  </body>
+</html>
